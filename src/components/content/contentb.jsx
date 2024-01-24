@@ -30,7 +30,7 @@ const ContentB = () => {
                 <div class="mr-auto ml-auto lg:max-w-2xl relative">
                 <div class="w-full relative transition-shadow duration-300 hover:shadow-xl">
                     <img
-                        src="https://images.unsplash.com/photo-1524508762098-fd966ffb6ef9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt class="rounded object-cover w-full h-56 shadow-lg sm:h-64 md:h-80 lg:h-96"/>
+                        src="https://images.unsplash.com/photo-1524508762098-fd966ffb6ef9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="rounded object-cover w-full h-56 shadow-lg sm:h-64 md:h-80 lg:h-96"/>
                     <a class="items-center justify-center w-full h-full bg-gray-900 absolute inset-0 flex transition-colors
                         duration-300 bg-opacity-50 group hover:bg-opacity-25">
                     <div class="items-center justify-center w-16 h-16 bg-gray-900 shadow-2xl flex rounded transition duration-300

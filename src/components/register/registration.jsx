@@ -7,34 +7,36 @@ const RegistrationPage = () => {
 
       <br />
       <div className="container flex justify-between mx-[-20.5px]">
-        <div className="custom-form p-10 border-10 border-black rounded-20 shadow-10 w-530 h-680 ml-40 mb-139 mr-20">
+        <div className="custom-form items-center p-10 border-10 border-black rounded-40 shadow-10 w-530 h-680 ml-40 mb-139 mr-20 bg-black bg-opacity-10">
           <h3 className="text-black text-center font-Impact text-48 mb-5">Registration</h3>
           <form>
             <div className="mb-3">
-              <input type="text" className="form-input" placeholder="Name" />
+              <input type="text" className="form-input p-1" placeholder="Name" />
             </div>
 
             <div className="mb-3">
-              <input type="email" className="form-input" aria-describedby="emailHelp" placeholder="Email address" />
+              <input type="email" className="form-input p-1" aria-describedby="emailHelp" placeholder="Email address" />
             </div>
 
             <div className="mb-3">
-              <input type="password" className="form-input" placeholder="Password" />
+              <input type="password" className="form-input p-1" placeholder="Password" />
             </div>
 
             <div className="mb-3">
-              <input type="text" className="form-input" placeholder="CollegeName" />
+              <input type="text" className="form-input p-1" placeholder="CollegeName" />
             </div>
 
             <div className="mb-3">
-              <input type="checkbox" className="form-checkbox" id="exampleCheck1" />
-              <label className="form-label" htmlFor="exampleCheck1">Agree to Terms and conditions</label>
+              <input type="checkbox" className="form-checkbox mr-2" id="exampleCheck1" />
+              <label className="form-label text-wrap" htmlFor="exampleCheck1">Agree to Terms and conditions</label>
             </div>
-            <button type="submit" className="btn btn-primary ml-100 mt-20 w-220 h-70 bg-bfc4cb text-black text-center font-JustAnotherHand text-30">Register Now</button>
+            <button type="submit" className="btn btn-primary ml-100 mt-10 w-220 h-70 bg-bfc4cb text-black text-center font-JustAnotherHand text-30">Register Now</button>
           </form>
         </div>
-        <div className="box1 w-774 h-774 bg-center bg-cover bg-[url('assets/img/cosmicon-old-poster.png')]" />
+
+        <div className="box1 w-400 z-1 h-600 bg-center bg-cover bg-[url('assets/img/cosmicon-old-poster.png')]" />
       </div>
+
     </div>
   );
 };
