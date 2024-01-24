@@ -1,0 +1,12 @@
+.transitionContainer {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .transitionContent {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .transitionButton {
+    transition: opacity 0.5s ease-in-out;
+  }
+  

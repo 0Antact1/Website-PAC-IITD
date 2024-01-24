@@ -1,0 +1,15 @@
+1. change font
+2. separate navbar from header (Wtf)
+3. change background
+4. stop width overflow
+
+5. change logo192/512
+6. rearrage pages
+7. routes.js
+8. assets img
+9. href from navbar
+10. "see what others dont" hover: WelcomeBanner
+11.
+
+IDEAS:-
+1. "turn off lights" - remove bg banner
