@@ -59,13 +59,13 @@ const Navbar = () => {
 
       {/* // transparent topbar */}
 
-      <div className="bg-gray-800 p-4 flex justify-end items-center bg-opacity-0" 
+      {/* <div className="bg-gray-800 p-4 flex justify-end items-center bg-opacity-0" 
         style={{
           opacity: (scrollingDown && isSticky) ? 0 : 1,
           transition: 'opacity 0.5s ease-in-out',
         }}>
           <button className='ml-2 bg-gray-700 text-white px-4 py-2 rounded cursor-pointer opacity-0'>placeholder</button>
-      </div>
+      </div> */}
 
     </>
   );

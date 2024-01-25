@@ -3,7 +3,7 @@ import React from 'react';
 const RegistrationPage = () => {
   return (
     <div className="w-screen h-screen bg-cover bg-center bg-[url('assets/img/moon-lander.png')]">
-      <h1 className="text-white text-center mt-23">COSMICON</h1>
+      <h1 className="text-gray-100 text-6xl text-center p-32">COSMICON</h1>
 
       <br />
       <div className="container flex justify-between mx-[-20.5px]">

@@ -3,6 +3,7 @@ import imgurl from './img.jpg'
 import Data from './testimonial.json'
 import Left from './Left.png'
 import Right from './Right.png'
+import './WhatWeDo.css'
 
 const WhatWeDo = () => {
     const [nextIndex, setnextIndex] = useState(1);

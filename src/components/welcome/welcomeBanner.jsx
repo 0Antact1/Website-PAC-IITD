@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./star.css"
 
 const WelcomeBanner = () => {
@@ -21,14 +21,14 @@ const WelcomeBanner = () => {
       }
     };
 
-    // Add event listener for mousemove
     document.addEventListener('mousemove', generateStars);
 
-    // Cleanup event listener on component unmount
     return () => {
       document.removeEventListener('mousemove', generateStars);
     };
   }, []);
+
+  // const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className="relative w-screen h-screen">
@@ -40,15 +40,30 @@ const WelcomeBanner = () => {
       ></div>
       <div className="absolute inset-0 bg-cover bg-center bg-[url('assets/img/pixlr-supernova.png')] opacity-70"></div>
 
+      {/* <div className='relative group'> */}
 
-      <div className="absolute bottom-0 left-0 w-3/4 h-1/2 p-40 mb-20 text-white">
-        <div className="text-5xl mb-6">Welcome to</div>
+
+      <div className="absolute bottom-0 left-0 w-3/4 h-1/2 p-40 mb-20 text-white"
+        // onMouseEnter={() => setIsHovered(true)}
+        // onMouseLeave={() => setIsHovered(false)}
+        >
+
+        <div className="text-5xl mb-5">Welcome to</div>
       
-        <div className="text-6xl text-uppercase font-bold mb-2">Physics and Astronomy Club</div>
+        <div className="text-6xl text-uppercase font-bold mb-3">Physics and Astronomy Club</div>
         
         <div className="text-2xl text-uppercase font-bold">iit delhi</div>
-        
+      
       </div>
+
+      {/* Visible on hover */}
+      {/* <div className="absolute top-0 right-0 p-20 mt-40 mr-30 text-2xl text-red-100"
+        style={{
+          opacity: (isHovered) ? 0.8 : 0,
+          transition: 'opacity 0.5s ease-in-out',
+        }}>
+            See what others don't!
+      </div> */}
 
     </div>
   );
