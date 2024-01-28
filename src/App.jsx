@@ -9,9 +9,8 @@ function App() {
   return (
     <div className="font-chakrapech overflow-x-hidden">
       <Router>
-        {/* <Header/> */}
+        
         <Navbar/>
-        {/* <Welcome/> */}
 
         <Routes>
           {/* <Route path='register' Component={RegistrationPage} /> */}

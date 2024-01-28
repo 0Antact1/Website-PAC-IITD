@@ -48,11 +48,11 @@ const WelcomeBanner = () => {
         // onMouseLeave={() => setIsHovered(false)}
         >
 
-        <div className="text-5xl mb-5">Welcome to</div>
+        <p className="text-5xl mb-5">Welcome to</p>
       
-        <div className="text-6xl text-uppercase font-bold mb-3">Physics and Astronomy Club</div>
+        <p className="text-6xl text-uppercase font-bold mb-3">Physics and Astronomy Club</p>
         
-        <div className="text-2xl text-uppercase font-bold">iit delhi</div>
+        <p className="text-2xl text-uppercase font-bold">iit delhi</p>
       
       </div>
 

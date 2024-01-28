@@ -3,7 +3,7 @@ import Data from '../what-we-do/testimonial.json'
 import Left from '../what-we-do/Left.png'
 import Right from '../what-we-do/Right.png'
 
-const Announce = () => {
+const Announcement = () => {
     const [nextIndex, setnextIndex] = useState(1);
     const [currentIndex, setcurrentIndex] = useState(0);
     const [prevIndex, setprevIndex] = useState(Data.length - 1);
@@ -57,4 +57,4 @@ const Announce = () => {
   )
 }
 
-export default Announce
+export default Announcement;
