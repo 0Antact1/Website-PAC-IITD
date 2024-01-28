@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-black p-4 flex fixed top-0 w-full z-10 justify-between items-center bg-opacity-50"
+      <div className="bg-black p-4 flex fixed top-0 w-full z-10 justify-between items-center bg-transparent"
         style={{
           opacity: (scrollingDown && isSticky) ? 0 : 1,
           transition: 'opacity 0.5s ease-in-out',
@@ -44,10 +44,10 @@ const Navbar = () => {
 
         <div className="flex items-center">
           {ROUTES.map(({path, element, icon, text}) => (
-
+              
             <Link to={path} 
               // target={element}
-              className="ml-2 bg-gray-700 text-white px-4 py-2 rounded cursor-pointer bg-opacity-60"
+              className="ml-2 bg-gray-700 text-white px-4 py-2 rounded cursor-pointer bg-opacity-20"
               >
               {text}
             </Link>
