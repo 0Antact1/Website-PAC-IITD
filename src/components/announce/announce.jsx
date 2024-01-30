@@ -5,7 +5,7 @@ import {
   MDBCarouselCaption,
 } from 'mdb-react-ui-kit';
 
-const AnnouncementsCarousel = () => {
+const Announce = () => {
   return (
     <div className="bg-black p-6 rounded-lg shadow-md mt-4 relative z-10">
 
@@ -14,7 +14,7 @@ const AnnouncementsCarousel = () => {
         <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div className="mx-auto mt-10 -mb-10 overflow-hidden w-11/12 border-4 rounded-xl border-red-200 border-opacity-60">
+      <div className="mx-auto mt-10 -mb-10 overflow-hidden w-11/12 border-8 border-spacing-12 rounded-2xl border-red-100 border-opacity-60">
         <MDBCarousel showControls showIndicators className="">
           <MDBCarouselItem itemId={1}>
             <img src="https://mdbootstrap.com/img/new/slides/041.jpg" className="d-block w-100 rounded-lg" alt="..." />
@@ -44,4 +44,4 @@ const AnnouncementsCarousel = () => {
   );
 };
 
-export default AnnouncementsCarousel;
+export default Announce;

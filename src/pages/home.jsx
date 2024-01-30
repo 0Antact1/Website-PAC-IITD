@@ -17,7 +17,7 @@ function Home() {
             <WhatWeDo/>
             <Pastevent/>
             <OurHistory/>
-            <Team/>
+            {/* <Team/> */}
             <Bottom/>
         </div>
     );
