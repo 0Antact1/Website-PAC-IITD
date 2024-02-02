@@ -1,10 +1,12 @@
 import Home from "./pages/home";
-import RegistrationPage from "./components/register/registration";
-import TeamYaj from "./team-page/Team";
+import RegistrationPage from "./pages/registration";
+import TeamYaj from "./pages/TeamYaj";
 import TeamPage from "./pages/team";
 import Cosmicon from "./pages/cosmicon";
 
-// routes.js
+import eventRegister from './data/eventRegister.js';
+
+// text: 0, if not on navbar
 export const ROUTES = [
     {
         path:'/',
@@ -13,15 +15,19 @@ export const ROUTES = [
         text: 'Home'
     },
     {
-        path:'/register',
-        element: <RegistrationPage/>,
+        path:'/cosmicon',
+        element: <Cosmicon/>,
         icon: NaN,
         text: 'Cosmicon'
     },
     {
-        path:'/team',
-        element: <Cosmicon/>,
+        path:'/register',
+        element: <RegistrationPage content={eventRegister}/>,
         icon: NaN,
+    },
+    {
+        path:'/team',
+        element: <TeamYaj/>,
         text: 'Our Team'
     },
     {
@@ -29,7 +35,8 @@ export const ROUTES = [
         element: <TeamPage/>,
         icon: NaN,
         text: 'Contact Us'
-    }
+    },
+    
 ];
   
 export default ROUTES;

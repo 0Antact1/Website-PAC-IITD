@@ -7,10 +7,10 @@ import {
 
 const Announce = () => {
   return (
-    <div className="bg-black p-6 rounded-lg shadow-md mt-4 relative z-10">
+    <div className="bg-black p-6 shadow-md relative">
 
       <div className="-mt-6 text-white text-center">
-        <h1 className="text-4xl font-bold mb-2">Announcements</h1>
+        <h1 className="text-4xl font-bold mt-4 mb-2">Announcements</h1>
         <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 

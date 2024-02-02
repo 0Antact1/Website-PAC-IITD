@@ -10,12 +10,12 @@ function App() {
     <div className="font-chakrapech overflow-x-hidden">
       <Router>
         
-        <Navbar/>
+        <Navbar className="z-10"/>
 
         <Routes>
           {/* <Route path='register' Component={RegistrationPage} /> */}
 
-          {ROUTES.map( ({path,element,icon,text}) => (
+          {ROUTES.map( ({path,element}) => (
               <Route path={path} element={element} />
           )
           )}

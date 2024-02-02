@@ -13,3 +13,4 @@
 
 IDEAS:-
 1. "turn off lights" - remove bg banner
+2. star-wars credits text effect

@@ -1,37 +1,91 @@
 import React, { useState, useEffect } from 'react';
-import './cosmiconBanner.css'; // Import your CSS file
+
 
 const CosmiconBanner = () => {
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAnimationComplete(true);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+
   const [isBannerVisible, setIsBannerVisible] = useState(true);
 
   useEffect(() => {
-    // Hide banner after 1 second when the page loads
     const timeoutId = setTimeout(() => {
       setIsBannerVisible(false);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
+
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-cover bg-center bg-[url('assets/img/moon-lander.png')]">
-      <div className='relative w-screen h-screen bg-black bg-opacity-50' />
-      <div className="banner">
-        <div className={`text-center ${isBannerVisible ? 'shrink' : ''}`}>
-          <h1 className={`text-white ${isBannerVisible ? '' : ''}`}>
-            Cosmicon
-          </h1>
-        </div>
+    <div className="h-screen relative overflow-hidden items-center justify-center">
+      
+      {/* Fading background */}
+      <div className={`absolute inset-0 bg-black bg-cover bg-center transition-all duration-[2s] 
+          ${animationComplete ? 'opacity-0' : 'opacity-100'}`} />
+
+
+      <div className={`text-white text-uppercase text-8xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+        transition-all duration-500 ${animationComplete ? 'opacity-0' : ''}`}
+        style={{ letterSpacing: '3px'}}>
+          Cosmicon
       </div>
 
-      <div className={`about-card opacity-80 ${isBannerVisible ? 'moved-down' : 'relative mt-80'}`}>
-        <div className="about-section">
+      <div className={`text-white text-uppercase text-8xl font-bold absolute left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-[2s]
+        ${animationComplete ? ' top-40 transform scale-75' : 'top-1/2'}`}
+        style={{ textShadow: '0 0 12px rgba(40, 191, 255, 0.8)',
+                letterSpacing: '3px'}}>
+            Cosmicon
+      </div>
+
+      <div className={`relative mt-80 top-0 left-0 w-full h-full mb-[-100px] bg-white rounded-2xl shadow-lg p-20
+        opacity-80 transition-transform duration-1000
+         ${isBannerVisible ? 'translate-y-full' : ''}`}>
+        
+        <div className="text-center">
           <h2 className="text-4xl font-bold">About</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
         </div>
+      
       </div>
+
     </div>
   );
 };
+
+// const CosmiconBanner = () => {
+//   const [animationComplete, setAnimationComplete] = useState(false);
+
+//   useEffect(() => {
+//     // Simulate a delay to trigger the animation after 1 second
+//     const timeout = setTimeout(() => {
+//       setAnimationComplete(true);
+//     }, 1000);
+
+//     // Clear the timeout on component unmount
+//     return () => clearTimeout(timeout);
+//   }, []);
+
+//   return (
+//     <div className={`h-screen flex items-center justify-center relative 
+//         ${animationComplete ? "bg-cover bg-center bg-[url('assets/img/starry-black.jpg')]" : 'bg-black'}`}>
+       
+
+//       <div className={`text-white text-6xl font-bold absolute transition-all duration-1000 
+//           ${animationComplete ? 'top-1/4 transform scale-75' : 'top-1/2'}`}>
+//             Cosmicon
+//       </div>
+
+//     </div>
+//   );
+// };
+
 
 export default CosmiconBanner;

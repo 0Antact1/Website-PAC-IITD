@@ -43,15 +43,18 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center">
-          {ROUTES.map(({path, element, icon, text}) => (
-              
+
+          {/* map links to pages in navbar if text (else spare) */}
+
+          {ROUTES.map(({path, text}) => (
+            text ?
             <Link to={path} 
               // target={element}
               className="ml-2 bg-gray-700 text-white px-4 py-2 rounded cursor-pointer bg-opacity-20"
               >
               {text}
             </Link>
-
+            : <></>
           ))}
         </div>
         

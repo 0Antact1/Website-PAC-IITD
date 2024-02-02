@@ -2,10 +2,9 @@ import React from 'react';
 
 import WhatWeDo from '../what-we-do/Whatwedo';
 import Pastevent from '../past-event/Pastevent';
-import Team from '../team-page/Team';
+import Team from './TeamYaj.jsx';
 import Announce from '../components/announce/announce.jsx';
-import OurHistory from '../ourhistory/Ourhistory';
-import Bottom from '../bottom/Bottom';
+import Bottom from '../components/bottom/Bottom';
 import WelcomeBanner from '../components/welcome/welcomeBanner.jsx';
 
 
@@ -16,7 +15,7 @@ function Home() {
             <Announce/>
             <WhatWeDo/>
             <Pastevent/>
-            <OurHistory/>
+            {/* <OurHistory/> */}
             {/* <Team/> */}
             <Bottom/>
         </div>
