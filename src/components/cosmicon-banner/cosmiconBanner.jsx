@@ -45,8 +45,8 @@ const CosmiconBanner = () => {
             Cosmicon
       </div>
 
-      <div className={`relative mt-80 top-0 left-0 w-full h-full mb-[-100px] bg-white rounded-2xl shadow-lg p-20
-        opacity-80 transition-transform duration-1000
+      <div className={`relative mt-80 mx-10 h-full mb-[-100px] bg-opacity-10 bg-white border-2 rounded-2xl shadow-lg p-20
+        opacity-80 transition-transform duration-1000 text-white shadow-orange-300
          ${isBannerVisible ? 'translate-y-full' : ''}`}>
         
         <div className="text-center">
@@ -86,6 +86,5 @@ const CosmiconBanner = () => {
 //     </div>
 //   );
 // };
-
 
 export default CosmiconBanner;

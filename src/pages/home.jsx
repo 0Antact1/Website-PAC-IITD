@@ -6,6 +6,7 @@ import Team from './TeamYaj.jsx';
 import Announce from '../components/announce/announce.jsx';
 import Bottom from '../components/bottom/Bottom';
 import WelcomeBanner from '../components/welcome/welcomeBanner.jsx';
+import Footer from '../components/footer/Footer.jsx';
 
 
 function Home() {
@@ -15,9 +16,9 @@ function Home() {
             <Announce/>
             <WhatWeDo/>
             <Pastevent/>
-            {/* <OurHistory/> */}
             {/* <Team/> */}
             <Bottom/>
+            <Footer/>
         </div>
     );
 }

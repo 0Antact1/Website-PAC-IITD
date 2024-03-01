@@ -13,12 +13,15 @@ const BubbleText = ({text}) => {
   var str = text.toString();
 
   return (
-    <h2 className="text-center text-5xl font-thin text-indigo-300">
+    <h2 className="text-center text-5xl font-thin text-indigo-300" >
+        {/* style={{color: color}} */}
+
       {str.split("").map((child, idx) => (
         <span className={styles.hoverText} key={idx}>
           {child}
         </span>
       ))}
+
     </h2>
   );
 };
