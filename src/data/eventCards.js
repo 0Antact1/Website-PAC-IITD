@@ -10,7 +10,7 @@ const eventCards = [
         desc: "Give event description here"
     },
     {
-        head: "Hello",
+        head: "Bye",
         image: starb,
         link: "/register?event=",
         desc: "Give event description here"

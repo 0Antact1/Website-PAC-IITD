@@ -43,17 +43,19 @@ const WelcomeBanner = () => {
       {/* <div className='relative group'> */}
 
 
-      <div className="absolute bottom-0 left-0 w-3/4 h-1/2 p-40 mb-20 text-white"
+      <div className="absolute bottom-0 left-0 w-7/8 h-1/2 p-40 mb-20 text-white"
         // onMouseEnter={() => setIsHovered(true)}
         // onMouseLeave={() => setIsHovered(false)}
         >
 
-        <p className="text-5xl mb-5">Welcome to</p>
-      
-        <p className="text-6xl text-uppercase font-bold mb-3">Physics and Astronomy Club</p>
-        
-        <p className="text-2xl text-uppercase font-bold">iit delhi</p>
-      
+        {/* <p className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-5">Welcome to</p>
+        <p className="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-uppercase font-bold mb-3">Physics and Astronomy Club</p>
+        <p className="sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-uppercase font-bold">iit delhi</p> */}
+
+        <p className="lg:text-3xl xl:text-5xl 2xl:text-6xl mb-5">Welcome to</p>
+        <p className="lg:text-4xl xl:text-6xl 2xl:text-7xl text-uppercase font-bold mb-3">Physics and Astronomy Club</p>
+        <p className="lg:text-xl xl:text-3xl 2xl:text-4xl text-uppercase font-bold">iit delhi</p>
+
       </div>
 
       {/* Visible on hover */}

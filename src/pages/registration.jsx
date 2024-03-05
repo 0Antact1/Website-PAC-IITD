@@ -83,7 +83,7 @@ const RegistrationPage = () => {
                 </h1>
                 <div class="py-6 space-x-2">
                     <span class="w-10 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">f</span>
-                    <span class="p-1 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">Gendu</span>
+                    <span class="p-1 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">G</span>
                     <span class="w-10 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">in</span>
                 </div>
                 <p class="text-gray-100">

@@ -7,15 +7,19 @@ import Announce from '../components/announce/announce.jsx';
 import Bottom from '../components/bottom/Bottom';
 import WelcomeBanner from '../components/welcome/welcomeBanner.jsx';
 import Footer from '../components/footer/Footer.jsx';
+import PastEvents from '../components/past-events/pastEvents.jsx';
 
+import announceBanners from '../data/annouce'
+import pastEventsData from '../data/pastEvents'
 
 function Home() {
     return (
         <div>
             <WelcomeBanner/>
-            <Announce/>
+            <Announce announcer={announceBanners}/>
             <WhatWeDo/>
-            <Pastevent/>
+            {/* <Pastevent/> */}
+            <PastEvents events={pastEventsData}/>
             {/* <Team/> */}
             <Bottom/>
             <Footer/>
