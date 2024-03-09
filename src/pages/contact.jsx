@@ -22,10 +22,10 @@ import React from "react";
 
 const ContactPage = () => {
     return (
-    <div className="flex flex-col h-screen lg:h-auto lg:flex-row bg-[url(https://source.unsplash.com/cuddQwqncLc)] bg-cover bg-center">
+    <div className="flex flex-col min-h-screen max-h-full lg:h-auto lg:flex-row bg-[url(https://source.unsplash.com/cuddQwqncLc)] bg-cover bg-center">
       {/* Left Column */}
-      <div className="flex-1 p-8 h-screen text-white flex flex-col justify-center">
-        <div className="mx-20">
+      <div className="flex-1 p-2 md:p-4 lg:p-8 h-screen text-white flex flex-col justify-center">
+        <div className="mx-10 md:mx-20">
             <h1 className="text-lg lg:text-4xl font-bold mb-4">Contact Us</h1>
             <div className="mb-4">
               <a className="text-sm lg:text-xl text-blue-100 hover:text-blue-200" href="mailto:physicsastronomyclubiitd@gmail.com">

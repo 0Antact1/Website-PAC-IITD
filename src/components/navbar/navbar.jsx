@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from "../../routes";
 
 import logo from '../../assets/img/pac-logo-transparent.png'
+import { MDBIcon } from 'mdb-react-ui-kit';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(true);
@@ -69,14 +70,15 @@ const Navbar = () => {
 
       {/* Mobile menu button */}
       <div className="md:hidden">
-        <button className="text-white hover:text-gray-300 focus:outline-none"
+        <button className="text-white hover:text-gray-300 p-1 focus:outline-none"
             onClick={toggleMobileMenu}>
           {/* You can use a hamburger icon or any other icon for the mobile menu */}
-          ☰
+          <MDBIcon icon="bars" />
         </button>
       </div>
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-16 right-0 left-0 bg-black bg-opacity-50">
+          {/* <div className='mt-16 bg-opacity-20 w-full border-b border-gray-700' /> */}
           {ROUTES.map(({ path, text, link }) => (
             text ? (
               path ?

@@ -10,7 +10,7 @@ const Announce = ({announcer}) => {
     <div>
       {/* <div className="h-4 -mb-4 w-screen bg-gradient-to-r from-[rgb(20,20,20)] via-[rgb(150,40,20)] to-[rgb(20,20,20)]"></div> */}
 
-      <div className="bg-[rgb(15,15,44)] bg-[url(assets/img/orange-land-v3.jpg)] bg-cover p-6 shadow-md relative">
+      <div className="bg-[url(assets/img/orange-land-v3.jpg)] bg-cover bg-bottom p-6 shadow-md relative">
 
         <div className="-mt-6 -ml-6 w-screen p-1 text-white text-center bg-[rgb(0,0,0)] bg-opacity-40">
           <h1 className="text-4xl 2xl:text-6xl font-bold mt-4 mb-2">Announcements</h1>
@@ -25,7 +25,7 @@ const Announce = ({announcer}) => {
 
             {announcer.map(announce => ( 
                 <MDBCarouselItem itemId={announce.id}>
-                  <img src={announce.image} className="d-block h-[40rem] w-100 rounded-lg" alt="..." />
+                  <img src={announce.image} className="d-block h-80 lg:h-[40rem]  w-100 rounded-lg" alt="..." />
                   <MDBCarouselCaption>
                     <h5>{announce.title}</h5>
                     <p>{announce.caption}</p>
