@@ -8,6 +8,7 @@ const SectionCard = ({data}) => {
             {
                 head: "Entry",
                 image: starb,
+                time: "11am, Mar 8, 2024",
                 link: "",
                 desc: "Install Tailwind CSS without any Javascript Framewrok locally with purgeCSS, enable the dark mode option, prefferences or class is up to you."
             }
@@ -21,15 +22,15 @@ const SectionCard = ({data}) => {
 
             {data.map(({head,image,link,desc}) => (
                 <a href={link}>
-                <div class="flex w-full">
+                <div class="flex w-full h-100">
                     <div className={`relative flex flex-col items-start m-1 transition duration-300 ease-in-out delay-150 transform bg-white shadow-2xl rounded-xl 
                         md:w-80 md:-ml-16 md:hover:-translate-x-16 md:hover:-translate-y-8`}>
                         <img class="object-cover object-center w-full rounded-t-xl lg:h-48 md:h-36" src={image} alt="blog" />
-                        <div class="px-6 py-8">
+                        <div class="px-6 py-1">
                             <h4 class="mt-4 text-2xl font-semibold text-neutral-600">
                             <span class="">{head}</span>
                             </h4>
-                            <p class="mt-4 text-base font-normal text-gray-500 leading-relax">{desc}</p>
+                            <p class="mt-3 text-base font-normal text-gray-500 leading-relax">{desc}</p>
                         </div>
                     </div>
                 </div>

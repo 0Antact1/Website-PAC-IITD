@@ -10,16 +10,16 @@ const Announce = ({announcer}) => {
     <div>
       {/* <div className="h-4 -mb-4 w-screen bg-gradient-to-r from-[rgb(20,20,20)] via-[rgb(150,40,20)] to-[rgb(20,20,20)]"></div> */}
 
-      <div className="bg-[rgb(15,15,44)] bg-[url(assets/img/orange-land-v3.jpg)] p-6 shadow-md relative">
+      <div className="bg-[rgb(15,15,44)] bg-[url(assets/img/orange-land-v3.jpg)] bg-cover p-6 shadow-md relative">
 
         <div className="-mt-6 -ml-6 w-screen p-1 text-white text-center bg-[rgb(0,0,0)] bg-opacity-40">
-          <h1 className="lg:text-4xl 2xl:text-6xl font-bold mt-4 mb-2">Announcements</h1>
-          <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1 className="text-4xl 2xl:text-6xl font-bold mt-4 mb-2">Announcements</h1>
+          <p className="text-sm"> </p>
         </div>
 
         
 
-        <div className="mx-auto mt-10 overflow-hidden w-11/12 border-8 border-spacing-12 rounded-2xl border-red-100 border-opacity-60">
+        <div className="mx-auto mt-10 overflow-hidden w-5/6 border-8 border-spacing-12 rounded-2xl border-red-100 border-opacity-60">
 
           <MDBCarousel showControls showIndicators className="">
 

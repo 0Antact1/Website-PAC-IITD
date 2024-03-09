@@ -1,20 +1,22 @@
 import React from 'react';
-import CosmiconBanner from '../components/cosmicon-banner/cosmiconBanner';
-import BubbleText from '../components/bubble-text/bubbletext';
 import SectionCard from '../components/cards/sectionCard';
-
 import eventCards from '../data/eventCards';
 
 const Cosmicon = () => {
     return (
-        <div>
-            <div className="fixed inset-0 z-[-1] bg-cover bg-center bg-[url('assets/img/starry-black.jpg')]" />
+        <div className="bg-cover bg-center 
+            bg-[url('assets/img/orange-land-v2.jpg')]
+            bg-[url(https://media.giphy.com/media/xUPGcfzaX9hFFQJYre/giphy.gif)]sss">
+            <div className="fixed inset-0 z-[-1] " />
 
-            <CosmiconBanner/>
-            <BubbleText text={"nigga"}/>
+            <div className='h-[50vh] w-full text-center justify-center'>
+                Cosmicon
+                <img />
+            </div>
             
-            <div className="absolute bg-white bg-opacity-10 w-full flex flex-col items-center justify-center">
-                <h1 className="text-6xl text-white mt-8">Events</h1>
+            <div className="w-full flex flex-col items-center justify-center">
+                <h1 className="text-xl lg:text-3xl 2xl:text-6xl w-4/5 text-center
+                 bg-opacity-50 p-6 bg-[#cc574f] rounded-full text-white mt-8">Events</h1>
                 <SectionCard data={eventCards}/>
             </div>
 

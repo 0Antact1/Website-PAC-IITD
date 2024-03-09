@@ -26,9 +26,9 @@ const PastEvents = ({events}) => {
     //   </div>
     // </div>
 
-    <div class="bg-gray-950 px-4 py-10">
+    <div class="bg-gray-700 px-4 py-10">
       <div class="max-w-7xl max-md:max-w-lg mx-auto">
-        <h2 class="text-5xl mx-auto font-extrabold text-gray-300">Past Events</h2>
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-100">Past Events</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
           {/* --- Event Cards mapped --- */}

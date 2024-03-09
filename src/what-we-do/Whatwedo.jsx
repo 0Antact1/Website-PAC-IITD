@@ -34,7 +34,7 @@ const WhatWeDo = () => {
     className="flex flex-col items-center justify-between h-screen w-scren"
     style={{ backgroundImage: `url(${imgurl})`, backgroundSize: 'cover' }}
   >
-    <div className='flex h-[20%] justify-center items-center text-white text-center text-6xl'>WHAT WE DO</div>
+    <div className='flex h-[20%] justify-center items-center text-white text-center text-4xl lg:text-6xl font-bold'>What We Do</div>
     <div className='flex h-[50%] justify-around items-center'>
     <div className="h-[90%] hidden md:flex flex-col relative bg-red-50 w-[50%] md:w-[20%] rounded-3xl text-white justify-center items-center text-center border-2 border-black"
         style={{ backgroundImage: `url(${prevImage})`, backgroundSize: 'cover' }} >

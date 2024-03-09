@@ -1,7 +1,7 @@
 import Home from "./pages/home";
 import RegistrationPage from "./pages/registration";
-import TeamYaj from "./pages/TeamYaj";
 import TeamPage from "./pages/team";
+import ContactPage from "./pages/contact.jsx";
 import Cosmicon from "./pages/cosmicon";
 
 import eventRegister from './data/eventRegister.js';
@@ -21,22 +21,26 @@ export const ROUTES = [
         text: 'Cosmicon'
     },
     {
+        link:"https://home.iitd.ac.in",
+        text: 'IIT Delhi'
+    },
+    {
         path:'/register',
         element: <RegistrationPage content={eventRegister}/>,
         icon: NaN,
     },
     {
         path:'/team',
-        element: <TeamYaj/>,
+        element: <TeamPage/>,
         text: 'Our Team'
     },
     {
         path:'/contact',
-        element: <TeamPage/>,
+        element: <ContactPage/>,
         icon: NaN,
         text: 'Contact Us'
     },
-    
+
 ];
   
 export default ROUTES;

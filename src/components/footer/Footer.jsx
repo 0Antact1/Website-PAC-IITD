@@ -118,15 +118,15 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-100">
       <div className="container flex flex-col p-1 mx-auto md:p-2 lg:flex-row dark:divide-gray-400">
-        <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+        <ul className="self-center pt-2 space-y-4 text-center sm:flex sm:space-y-0 justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
           <li className='font-bold'>Contact:</li>
           {/* <li className=''>Samyak Jain (Overall Coordinator)</li> */}
           
           <li className='px-4 text-gray-300'><MDBIcon icon="envelope" className="me-1" /> +91 98714 08889</li>
-          <li className='px-4 text-gray-300'><MDBIcon icon="envelope" className="me-1" /> pac.iitd.ac.in</li>
+          <li className='px-4 text-gray-300'><MDBIcon icon="envelope" className="me-1" /> physicsandastronomyclub.iitd@gmail.com</li>
           
         </ul>
-        <div className="flex flex-col justify-center pt-6 lg:pt-0">
+        <div className="flex flex-col justify-center py-6 lg:pt-0">
           <div className="flex justify-center space-x-4">
             <a rel="noopener noreferrer" href="#" title="Instagram" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 border-sky-950 border-2 bg-sky-900 text-gray-100">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="w-4 h-4">
